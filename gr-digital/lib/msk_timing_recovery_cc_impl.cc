@@ -150,6 +150,9 @@ namespace gr {
                     if(d_mu<0) {
                         d_mu++;
                         iidx--;
+                    } else if(d_mu > 1) {
+                        d_mu--;
+                        iidx++;
                     }
                     d_div = 0;
                     d_omega = d_sps;
